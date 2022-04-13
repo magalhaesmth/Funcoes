@@ -1,6 +1,6 @@
 import 'dart:io';
 
-void show() {
+/*void show() {
   var resultado = verificarAprovacao();
   print('O aluno esta $resultado');
 }
@@ -18,5 +18,22 @@ String verificarAprovacao() {
     return 'Aprovado';
   } else {
     return 'Reprovado';
+  }
+}
+*/
+void show() {}
+String verificarSaldo() {
+  print("Informe o seu salario liquido: ");
+  double salario = double.parse(stdin.readLineSync()!);
+
+  print("Informe seus debitos fixos");
+  double debitos = double.parse(stdin.readLineSync()!);
+
+  double restante = (salario - debitos);
+
+  if (restante < salario) {
+    return 'Conta positiva';
+  } else {
+    return 'Negativado';
   }
 }

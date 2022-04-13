@@ -1,4 +1,4 @@
-import 'package:funcoes_dart/b_funcoes_sem_retorno_sem_parametro.dart';
+/*import 'package:funcoes_dart/b_funcoes_sem_retorno_sem_parametro.dart';
 
 void show() {
   var nota1 = 6.5;
@@ -13,4 +13,18 @@ void verificarAprovacao(double nota1, double nota2) {
   } else {
     print("Reprovado!");
   }
+}
+*/
+void show() {
+  var salario = 4.500;
+  var debitos = 4.000;
+  verificarSaldo(salario, debitos);
+}
+
+void verificarSaldo(double salario, double debitos) {
+  double restante = (salario - debitos);
+  if (restante < salario) ;
+  print("Saldo positivo");
+}else {
+  print ("Saldo negativo");
 }
